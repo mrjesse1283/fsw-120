@@ -1,25 +1,15 @@
-/* jshint esversion:6 */
 
-import logo from './logo.svg';
-import './App.css';
+import "./App";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+        <input type="checkbox"></input><p style={{color:"red"}}>option1</p>
+        <input type="checkbox"></input><p style={{color:"orange"}}>option2</p>
+        <input type="checkbox"></input><p style={{color:"green"}}>option3</p>
+        <input type="checkbox"></input><p style={{color:"blue"}}>option4</p>
+
     </div>
   );
 }
