@@ -117,7 +117,7 @@ function Supers(){
 ] */
 
 /* var char = Supers.map(funciton(arr),{ */
-    let char = Characters.map(function(props){
+    let char = Characters.map(function(props) { 
     /*     
         let n = props.name;
         let iN = props.imageName */

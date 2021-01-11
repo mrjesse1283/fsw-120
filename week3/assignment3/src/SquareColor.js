@@ -20,7 +20,7 @@ class SquareColor extends React.Component{
                      margin:"10px",
                      backgroundColor:this.props.backgroundColor
         
-                     }}>Tap This</h1>
+                     }}>Music</h1>
             </div>
 
         )
