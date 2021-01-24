@@ -50,22 +50,83 @@ handleClick = (event) => {
 render(){
   return (
     <div>
-      <div>
+      <div style={{
+        border:"3px solid black", 
+        margin:"30px",
+        height:"150px",
+        width:"50%"}}>
         <Form {...this.state} handleChange={this.handleChange}/>
         <button onClick={this.handleClick}>Submit</button>
       </div>
       <h1 onClick={this.handleClick}>{this.state.userinput}</h1>
-      <ol>
-        {this.state.names.map((name)=>{ 
-          var {firstName, lastName, phone, email, favoriteFood,textArea, placeOfBirth } = name
-            return(
-              <li>
-                <h1>{firstName}</h1>
-                {firstName}{lastName}{phone}{email}{favoriteFood}{textArea}
-              </li>
-            )
-        })}
-      </ol>
+      <div style={{
+        border:"3px solid black", 
+        margin:"30px",
+      /*   height:"", */
+        width:"50%"
+        }}>
+          
+        <h1 style={{}}>BADGE:</h1>
+        <ol>
+          {this.state.names.map((name)=>{ 
+            var {firstName, lastName, phone, email, favoriteFood,textArea, placeOfBirth } = name
+              return(
+                <li style={{listStyleType:"none"}}>
+                  <h1 style={{
+                    border:"1px solid black",
+                    width: "auto",
+                    margin:"10px"
+                    }}>
+                      {firstName}</h1>
+
+                  <h1 style={{
+                    border:"1px solid black",
+                    width: "auto",
+                    margin:"10px"
+                    }}>
+                      {lastName}</h1>
+
+                  <h1 style={{
+                    border:"1px solid black",
+                    width: "auto",
+                    margin:"10px"
+                    }}>
+                      {email}</h1>
+    
+                  <h1 style={{
+                    border:"1px solid black",
+                    width: "auto",
+                    margin:"10px"
+                    }}>
+                      {placeOfBirth}</h1>
+
+                  <h1 style={{
+                    border:"1px solid black",
+                    width: "auto",
+                    margin:"10px"
+                    }}>
+                      {phone}</h1>
+    
+                  <h1 style={{
+                    border:"1px solid black",
+                    width: "auto",
+                    margin:"10px"
+                    }}>
+                      {favoriteFood}</h1>
+
+                  <h1 style={{
+                    border:"1px solid black",
+                    width: "auto",
+                    margin:"10px"
+                    }}>
+                      {textArea}</h1>
+
+                {/*{firstName}{lastName}{phone}{email}{favoriteFood}{textArea} */}
+                </li>
+              )
+          })}
+        </ol>
+      </div>
     </div>
   );
 }
